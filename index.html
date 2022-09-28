@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="">
+    <meta name="author"
+          content="Under submission">
+
+    <title>PLANNING WITH LARGE LANGUAGE MODELS FOR CODE GENERATION</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>PLANNING WITH LARGE LANGUAGE MODELS FOR CODE GENERATION</h2>
+    <h3>ICLR 2023 (under submission)</h3>
+    <hr>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="">Paper</a>
+        <a class="btn btn-primary" href="">Code</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <!-- <div class="vcontainer">
+            <iframe class='video' src="" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div> -->
+        <!-- <hr> -->
+        <p>
+            Existing large language model-based code generation pipelines typically use beam search or sampling algorithms during the decoding process. Although the programs they generate achieve high token-matching-based scores, they often fail to compile or generate incorrect outputs. The main reason is that conventional Transformer decoding algorithms may not be the best choice for code generation. In this work, we propose a novel Transformer decoding algorithm, Planning-Guided Transformer Decoding (PG-TD), that uses a planning algorithm to do lookahead search and guide the Transformer to generate better programs. Specifically, instead of simply optimizing the likelihood of the generated sequences, the Transformer makes use of a planner that generates complete programs and tests them using public test cases. The Transformer can therefore make more informed decisions and output tokens that will eventually lead to higher-quality programs. We also design a mechanism that shares information between the Transformer and the planner to make the overall framework computationally efficient. We empirically evaluate our framework with several large language models as backbones on public coding challenge benchmarks, showing that 1) it can generate programs that consistently achieve higher performance compared with competing baseline methods; 2) it enables controllable code generation, such as concise codes and highly-commented codes by optimizing modified objectives.
+        </p>
+
+    </div>
+
+    <br>
+
+    <div class="section">
+        <h2>Planning-Guided Transformer Decoding (PG-TD) Architecture</h2>
+        <hr>
+        <div class="col justify-content-center text-center">
+            <div class="col-sm-12">
+                <img src="full_mcts_v4.png" style="width:100%">
+            </div>
+        </div>
+        <p>
+            Figure 2: Illustration of using the Monte Carlo tree search algorithm for token selection in theTransformer decoding process. <PD> stands for problem description. 
+        </p>
+    </div>
+
+    <br>
+    <hr>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
