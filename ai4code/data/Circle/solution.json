@@ -1,0 +1,5 @@
+{
+    "code": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n",
+    "time": 85.67571997642517,
+    "sample times": 59
+}

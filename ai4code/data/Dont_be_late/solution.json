@@ -1,0 +1,5 @@
+{
+    "code": "n, t, s=map(int, input().split())\nt1=n / s\nif t1 <= t:\n\tprint(\"Yes\")\nelse:\n\tprint(\"No\")\n",
+    "time": 187.98782229423523,
+    "sample times": 91
+}

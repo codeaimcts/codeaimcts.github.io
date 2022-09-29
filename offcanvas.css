@@ -2,11 +2,35 @@
  * Style tweaks
  * --------------------------------------------------
  */
+ .ai4code-group {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+.ai4code-group a {
+    margin: 8px;
+}
+.ai4code-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+}
+.ai4code-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
  html,
  body {
    overflow-x: hidden;  /*Prevent scroll on narrow devices */
    padding-top: 30px;
      text-align: justify;
+     scroll-behavior: smooth;
  }
  footer {
    padding: 10px 0;

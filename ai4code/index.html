@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AI4Code Demo: Planning with Large Language Models for Competitive-Level Code Generation">
+
+    <title>AI4Code</title>
+
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <!-- jQuery CSS/Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Fontawesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Highlight -->
+    <link id="highlight_css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
+</head>
+
+<body onresize="rescale_window()">
+
+    <!--this is for sometimes the fully expanded UI doesn't include body background css-->
+    <div class="main_background"></div>
+
+    <!--header section-->
+    <nav class="header">
+        <span><b>Code Generation Demo</b></span>
+        <div style="display: flex; align-items: center;">
+            <!-- <span id="rewalkthrough" class="pill" onClick="walkthrough()">walkthrough <i class="fa fa-refresh"></i></span>-->
+            <label class="switch">
+                <input id="color_theme_toggle" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span id="openFull" class="small_pill" onClick="openFullscreen()"><i class="fa fa-expand"></i></span>
+            <span id="unFull" class="small_pill" onClick="undoFullscreen()"><i class="fa fa-compress"></i></span>
+        </div>
+    </nav>
+
+    <!--<div id="walkthrough"></div>-->
+
+    <div class="left_side">
+        <div class="user_control">
+            <hr>
+            <button class="btn" onClick="new_example()"><i class="fa fa-refresh"></i></button>
+            <label>Example<span id="example_difficulty"></span></label>
+            <h2 id="example_name">...</h2>
+            <p id="example_question">...</p>
+            <hr>
+            <div id="example_logic"></div>
+            <hr>
+            <label>Input & Output</label>
+            <table id="evaluation"></table>
+        </div>
+        <div class="footer">
+            <label>Solution Stats</label>
+            <p id="solution_stats"></p>
+        </div>
+    </div>
+
+    <div class="right_side">
+        <div class="right_control">
+            <div id="progress">
+                <i class="fa fa-play-circle" onClick="replay()"></i>
+            </div>
+        </div>
+        <div class="visualizations">
+            <div class="vis" id="tree"></div>
+            <div class="vis" id="code">
+                <h2>Code</h2>
+                <hr>
+                <pre>
+                    <code id="code_update" class="language-python"></code>
+                </pre>
+                <div id="code_status"></div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!--custom javascript-->
+    <script src="./data/txt_data.js"></script>
+    <script src="./js/data.js"></script>
+    <!--    <script src="js/compute.js"></script>-->
+    <!--    <script src="js/code.js"></script>-->
+    <script src="js/code.js"></script>
+    <script src="js/tree.js"></script>
+    <script src="./js/interactions.js"></script>
+
+</body></html>

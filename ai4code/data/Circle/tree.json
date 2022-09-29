@@ -1,0 +1,523 @@
+[[{
+    "token": "#",
+    "state": "#",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "r",
+    "state": "r",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "r=int(input())\nif(r>=2*(r**2)):\n\tprint(r**2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "import",
+    "state": "import",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "import math\n\ndef radius(r):\n\treturn 2 * r * r\n\ndef area(r):\n\treturn r * r * 2\n\nn = int(input())\nr = list(map(int, input().split()))\nprint(area(r))\n"
+}], [{
+    "token": " cook",
+    "state": "# cook",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " Python",
+    "state": "# Python",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# Python 3 program to find the area of a circle of radius r\n# in the range of r = 2,r = r + 2,r = r + 3\n# Function to return the area of a circle of radius r\ndef area(r):\n\treturn 2*r*r\n\n# Function to find the area of a circle of radius r\ndef radius(r):\n\treturn r**2\n\n# For each iteration, make sure the value is an integer\nn=int(input())\nfor i in range(n):\n\tr=int(input())\n\tprint(area(r))\n"
+}, {
+    "token": "!/",
+    "state": "#!/",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "#!/usr/bin/env python\nimport math\n\ndef main():\n\tr = input().strip()\n\tr = float(r)\n\ta = (r ** 2) * math.pi\n\tif int(a) < 4:\n\t\tprint(0)\n\telse:\n\t\tprint(round(a * 2, 2))\n\nmain()\n\n"
+}], [{
+    "token": " your",
+    "state": "# cook your",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " you",
+    "state": "# cook you",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook you dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " y",
+    "state": "# cook y",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook y\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}], [{
+    "token": " dish",
+    "state": "# cook your dish",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " code",
+    "state": "# cook your code",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your code here\nimport math\nr=int(input())\nif(r>=2):\n\tprint(4*(r**2))\nelse:\n\tprint(0)\n"
+}, {
+    "token": " di",
+    "state": "# cook your di",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your di\nimport math\n\nPI = 3.1415926535897\nr = int(input())\narea = PI * r**2\n\nprint(round(area, 2))\n"
+}], [{
+    "token": " here",
+    "state": "# cook your dish here",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " he",
+    "state": "# cook your dish he",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish he\nr=int(input())\nif(r>=2):\n\tprint(4*(r**2))\nelse:\n\tprint(0)\n"
+}, {
+    "token": " h",
+    "state": "# cook your dish h",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish h\nr=int(input())\nif(r>=2):\n\tprint(4*(r**2))\nelse:\n\tprint(0)\n"
+}], [{
+    "token": "\n",
+    "state": "# cook your dish here\n",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "\n\n",
+    "state": "# cook your dish here\n\n",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\n\n\nimport math\nr=list(map(int,input().split()))\na=2*r\nprint(math.sqrt(a*a))\n"
+}, {
+    "token": "r",
+    "state": "# cook your dish herer",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish herer\nimport math\nr=int(input())\nif(r>1):\n\tprint(4*(math.pi*r**2))\nelse:\n\tprint(0)\n"
+}], [{
+    "token": "r",
+    "state": "# cook your dish here\nr",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "import",
+    "state": "# cook your dish here\nimport",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nimport math\nr=int(input())\nif(r>=2):\n\tprint(4*(r**2))\nelse:\n\tprint(0)\n"
+}, {
+    "token": "a",
+    "state": "# cook your dish here\na",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\na=list(map(int,input().split()))\nprint(round(a[0]*a[0]*(a[1]*a[1])**2,2))\n"
+}], [{
+    "token": "=",
+    "state": "# cook your dish here\nr=",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " =",
+    "state": "# cook your dish here\nr =",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr = list(map(int,input().split()))\nprint(round(r[0]*r[0]*2,1))\n"
+}, {
+    "token": "=(",
+    "state": "# cook your dish here\nr=(",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=(int(input()))\na=2*r*r\nprint(a**2)\n"
+}], [{
+    "token": "int",
+    "state": "# cook your dish here\nr=int",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "list",
+    "state": "# cook your dish here\nr=list",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=list(map(int,input().split()))\nprint(round(r*r*2,1))\n"
+}, {
+    "token": "float",
+    "state": "# cook your dish here\nr=float",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=float(input())\nprint(3.14*r*r)\n"
+}], [{
+    "token": "(",
+    "state": "# cook your dish here\nr=int(",
+    "selected": true,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": "(_",
+    "state": "# cook your dish here\nr=int(_",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(_input().strip())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " (",
+    "state": "# cook your dish here\nr=int (",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int (input())\nif(r>=2*(r**2)):\n\tprint(r**2*r)\n"
+}], [{
+    "token": "input",
+    "state": "# cook your dish here\nr=int(input",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}, {
+    "token": " input",
+    "state": "# cook your dish here\nr=int( input",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "raw",
+    "state": "# cook your dish here\nr=int(raw",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int(raw_input())\nif(r>=2*r):\n\tprint(r*r*2)\nelse:\n\tprint(0)\n"
+}], [{
+    "token": "()",
+    "state": "# cook your dish here\nr=int( input()",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "().",
+    "state": "# cook your dish here\nr=int( input().",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input().strip())\nprint(2*(r**2)-(2*r))\n"
+}, {
+    "token": "(",
+    "state": "# cook your dish here\nr=int( input(",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input('') )\nprint(round(4*r*r,1))\n"
+}], [{
+    "token": " )",
+    "state": "# cook your dish here\nr=int( input() )",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " ):",
+    "state": "# cook your dish here\nr=int( input() ):",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() ):\nprint(2*(r**2))\n"
+}, {
+    "token": "[",
+    "state": "# cook your dish here\nr=int( input()[",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input()[:-1])\nprint(2*(r**2)-(2*r))\n"
+}], [{
+    "token": "\n",
+    "state": "# cook your dish here\nr=int( input() )\n",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "\n\n",
+    "state": "# cook your dish here\nr=int( input() )\n\n",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\n\n\nprint( (r**2)*(r**2)//2 )\n"
+}, {
+    "token": " ",
+    "state": "# cook your dish here\nr=int( input() ) ",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input() ) \nprint(2*(r**2)-(2*r))\n"
+}], [{
+    "token": "print",
+    "state": "# cook your dish here\nr=int( input() )\nprint",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "if",
+    "state": "# cook your dish here\nr=int( input() )\nif",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nif( r>=2*r ):\n\tprint( 4*( r**2 ) )\nelse:\n\tprint(0)\n"
+}, {
+    "token": "#",
+    "state": "# cook your dish here\nr=int( input() )\n#",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\n#print(r)\nans=0\nfor i in range(1,r+1):\n\tans=ans+(i*i)\nprint(ans)\n"
+}], [{
+    "token": "(",
+    "state": "# cook your dish here\nr=int( input() )\nprint(",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "((",
+    "state": "# cook your dish here\nr=int( input() )\nprint((",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(((r**2)*4)**(1/2))\n"
+}, {
+    "token": "(\"",
+    "state": "# cook your dish here\nr=int( input() )\nprint(\"",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(\"{0:.2f}\".format( (2*r)**2 ) )\n"
+}], [{
+    "token": "2",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " 2",
+    "state": "# cook your dish here\nr=int( input() )\nprint( 2",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint( 2*(r**2) )\n"
+}, {
+    "token": " (",
+    "state": "# cook your dish here\nr=int( input() )\nprint( (",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint( (r**2)*(2*r)//4 )\n"
+}], [{
+    "token": "*",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " *",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2 *",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2 * (r**2))\n"
+}, {
+    "token": "**",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2**",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2**r*r)\n"
+}], [{
+    "token": "(",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "r",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*r",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*r*r)\n"
+}, {
+    "token": "p",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*p",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*pow(r,2)-2*r*r)\n"
+}], [{
+    "token": "r",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " r",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*( r",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*( r**2 ) )\n"
+}, {
+    "token": " (",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*( (",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*( (r**2)-(2*r) )\n"
+}], [{
+    "token": "**",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "*",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r*",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r*r))\n"
+}, {
+    "token": " **",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r **",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r ** 2))\n"
+}], [{
+    "token": "2",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " 2",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r** 2",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r** 2))\n"
+}, {
+    "token": "3",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**3",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**3))\n"
+}], [{
+    "token": ")-",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "))",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2))",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2))\n"
+}, {
+    "token": "-",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2-",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2-r))\n"
+}], [{
+    "token": "r",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "(",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-(",
+    "selected": false,
+    "score": 0.1111111111111111,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-(2*r))\n"
+}, {
+    "token": "2",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-2",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-2)\n"
+}], [{
+    "token": "**",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": ")",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r)",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r)\n"
+}, {
+    "token": "*",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r*",
+    "selected": false,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r*r)\n"
+}], [{
+    "token": "2",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "3",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**3",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**3)\n"
+}, {
+    "token": "0",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**0",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**0.5)\n"
+}], [{
+    "token": ")",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "//",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2//",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2//2)\n"
+}, {
+    "token": "/",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2/",
+    "selected": false,
+    "score": 0.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2/4)\n"
+}], [{
+    "token": "\n",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": " ",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2) ",
+    "selected": false,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2) \n"
+}, {
+    "token": "\n\n",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n\n",
+    "selected": false,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n\n"
+}], [{
+    "token": "<|endoftext|>",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n",
+    "selected": true,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n"
+}, {
+    "token": "\n",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n\n",
+    "selected": false,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\n\n#print(r)\n"
+}, {
+    "token": "r",
+    "state": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\nr",
+    "selected": false,
+    "score": 1.0,
+    "complete_program": "# cook your dish here\nr=int( input() )\nprint(2*(r**2)-r**2)\nr=0\n"
+}]]
