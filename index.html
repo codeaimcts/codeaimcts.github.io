@@ -7,7 +7,7 @@
     <meta name="description"
           content="">
     <meta name="author"
-          content="Under submission">
+          content="Shun Zhang, Zhenfang Chen, Yikang Shen, Mingyu Ding, Joshua B. Tenenbaum, Chuang Gan">
 
     <title>Planning with Large Language Models for Code Generation</title>
     <!-- Bootstrap core CSS -->
@@ -24,10 +24,18 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container"></div>
     <h2>Planning with Large Language Models for Code Generation</h2>
-    <h3>ICLR 2023 (in submission)</h3>
+    <h3>ICLR 2023</h3>
     <hr>
-    <div class="ai4code-group" role="group" aria-label="Top menu">
-        <!--<a class="btn btn-primary" href="">Paper</a> -->
+    <p class="authors">
+        <a href="https://shunzh.github.io/">Shun Zhang</a>,
+        <a href="https://zfchenunique.github.io/">Zhenfang Chen</a>,
+        <a href="https://research.ibm.com/people/yikang-shen">Yikang Shen</a>,
+        <a href="https://dingmyu.github.io/">Mingyu Ding</a>, 
+        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>, and
+        <a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://openreview.net/forum?id=Lr8cOOtYbfL">Paper</a>
         <a class="btn btn-primary" href="https://drive.google.com/file/d/1vh9HqB1GXWf4g_VpdOwyUxBH9kOvnQMw/view?usp=sharing">Code</a>
         <a class="btn btn-primary" href="#ai4code">Prototype</a>
     </div>
@@ -35,16 +43,9 @@
 
 <div class="container">
     <div class="section">
-        <!-- <div class="vcontainer">
-            <iframe class='video' src="" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-        </div> -->
-        <!-- <hr> -->
         <p>
             Existing large language model-based code generation pipelines typically use beam search or sampling algorithms during the decoding process. Although the programs they generate achieve high token-matching-based scores, they often fail to compile or generate incorrect outputs. The main reason is that conventional Transformer decoding algorithms may not be the best choice for code generation. In this work, we propose a novel Transformer decoding algorithm, Planning-Guided Transformer Decoding (PG-TD), that uses a planning algorithm to do lookahead search and guide the Transformer to generate better programs. Specifically, instead of simply optimizing the likelihood of the generated sequences, the Transformer makes use of a planner that generates complete programs and tests them using public test cases. The Transformer can therefore make more informed decisions and output tokens that will eventually lead to higher-quality programs. We also design a mechanism that shares information between the Transformer and the planner to make the overall framework computationally efficient. We empirically evaluate our framework with several large language models as backbones on public coding challenge benchmarks, showing that 1) it can generate programs that consistently achieve higher performance compared with competing baseline methods; 2) it enables controllable code generation, such as concise codes and highly-commented codes by optimizing modified objectives.
         </p>
-
     </div>
 
     <br>
